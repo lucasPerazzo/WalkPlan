@@ -1,0 +1,39 @@
+# Insumos con la casa real (ver Privacidad en CLAUDE.md)
+data/
+
+# Cualquier house.json con datos reales; solo se commitea house.example.json
+house.json
+house.raw.json
+*.house.json
+!house.example.json
+extraction/*
+!extraction/.gitkeep
+
+# Salidas de verificación que pueden mostrar la casa real
+validator/overlay.png
+report.json
+viewer/shots/
+
+# Assets descargados: python viewer/scripts/fetch_assets.py
+viewer/public/textures/
+viewer/public/hdri/
+viewer/public/models/
+
+# Dependencias y builds
+node_modules/
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+.vite/
+__pycache__/
+.pytest_cache/
+*.zip
+
+# Entorno
+.env
+.env.*
+*.local
+*.log
+.DS_Store
+Thumbs.db

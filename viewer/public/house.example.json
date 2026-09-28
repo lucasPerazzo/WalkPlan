@@ -1,0 +1,319 @@
+{
+  "version": 3,
+  "meta": {
+    "source": "ejemplo sintético",
+    "scale_reference": "frente 8.00 m",
+    "default_wall_height": 2.6,
+    "uncertainties": [
+      {
+        "element_id": "o2",
+        "note": "altura de antepecho asumida (0.90) por falta de corte",
+        "confidence": "medium"
+      }
+    ]
+  },
+  "walls": [
+    {
+      "id": "w1",
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        4,
+        0
+      ],
+      "thickness": 0.2,
+      "height": 2.6,
+      "kind": "exterior",
+      "status": "existing"
+    },
+    {
+      "id": "w2",
+      "start": [
+        4,
+        0
+      ],
+      "end": [
+        8,
+        0
+      ],
+      "thickness": 0.2,
+      "height": 2.6,
+      "kind": "exterior",
+      "status": "existing"
+    },
+    {
+      "id": "w3",
+      "start": [
+        8,
+        0
+      ],
+      "end": [
+        8,
+        5
+      ],
+      "thickness": 0.2,
+      "height": 2.6,
+      "kind": "exterior",
+      "status": "existing"
+    },
+    {
+      "id": "w4",
+      "start": [
+        8,
+        5
+      ],
+      "end": [
+        4,
+        5
+      ],
+      "thickness": 0.2,
+      "height": 2.6,
+      "kind": "exterior",
+      "status": "existing"
+    },
+    {
+      "id": "w5",
+      "start": [
+        4,
+        5
+      ],
+      "end": [
+        0,
+        5
+      ],
+      "thickness": 0.2,
+      "height": 2.6,
+      "kind": "exterior",
+      "status": "existing"
+    },
+    {
+      "id": "w6",
+      "start": [
+        0,
+        5
+      ],
+      "end": [
+        0,
+        0
+      ],
+      "thickness": 0.2,
+      "height": 2.6,
+      "kind": "exterior",
+      "status": "existing"
+    },
+    {
+      "id": "w7",
+      "start": [
+        4,
+        0
+      ],
+      "end": [
+        4,
+        5
+      ],
+      "thickness": 0.14,
+      "height": 2.6,
+      "kind": "interior",
+      "status": "new"
+    }
+  ],
+  "openings": [
+    {
+      "id": "o1",
+      "wall": "w1",
+      "type": "door",
+      "offset": 1.5,
+      "width": 0.9,
+      "height": 2.1,
+      "sill": 0,
+      "status": "existing"
+    },
+    {
+      "id": "o2",
+      "wall": "w2",
+      "type": "window",
+      "offset": 1.4,
+      "width": 1.2,
+      "height": 1.1,
+      "sill": 0.9,
+      "status": "existing"
+    },
+    {
+      "id": "o3",
+      "wall": "w7",
+      "type": "door",
+      "offset": 2.0,
+      "width": 0.8,
+      "height": 2.1,
+      "sill": 0,
+      "status": "new"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "r1",
+      "name": "Living",
+      "polygon": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          3.93,
+          0.1
+        ],
+        [
+          3.93,
+          4.9
+        ],
+        [
+          0.1,
+          4.9
+        ]
+      ],
+      "floor": {
+        "material": "wood",
+        "color": "#a47a52"
+      },
+      "status": "existing"
+    },
+    {
+      "id": "r2",
+      "name": "Dormitorio",
+      "polygon": [
+        [
+          4.07,
+          0.1
+        ],
+        [
+          7.9,
+          0.1
+        ],
+        [
+          7.9,
+          4.9
+        ],
+        [
+          4.07,
+          4.9
+        ]
+      ],
+      "floor": {
+        "material": "wood",
+        "color": "#a47a52"
+      },
+      "status": "new"
+    }
+  ],
+  "furniture": [
+    {
+      "id": "f1",
+      "room": "r1",
+      "catalog": "sofa_3",
+      "position": [
+        2.0,
+        4.3
+      ],
+      "rotation": 0,
+      "status": "new",
+      "source": "suggested"
+    },
+    {
+      "id": "f2",
+      "room": "r1",
+      "catalog": "coffee_table",
+      "position": [
+        2.0,
+        3.2
+      ],
+      "rotation": 0,
+      "status": "new",
+      "source": "suggested"
+    },
+    {
+      "id": "f3",
+      "room": "r2",
+      "catalog": "bed_double",
+      "position": [
+        6.2,
+        3.85
+      ],
+      "rotation": 0,
+      "status": "new",
+      "source": "suggested"
+    },
+    {
+      "id": "f4",
+      "room": "r2",
+      "catalog": "wardrobe",
+      "position": [
+        7.55,
+        1.2
+      ],
+      "rotation": 270,
+      "status": "new",
+      "source": "suggested"
+    }
+  ],
+  "site": {
+    "environment": "suburb",
+    "north_deg": 0,
+    "latitude": -35.0,
+    "street_edge": [
+      [
+        -2,
+        -3
+      ],
+      [
+        10,
+        -3
+      ]
+    ],
+    "lot": [
+      [
+        -2,
+        -3
+      ],
+      [
+        10,
+        -3
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        -2,
+        12
+      ]
+    ]
+  },
+  "style": {
+    "facade": {
+      "material": "brick",
+      "color": "#9c5a3c",
+      "notes": "ladrillo visto"
+    },
+    "interior_walls": {
+      "material": "plaster",
+      "color": "#ece8df"
+    },
+    "window_frames": {
+      "material": "aluminum",
+      "color": "#2b2b2b"
+    },
+    "doors": {
+      "material": "wood",
+      "color": "#6b4a2f"
+    },
+    "roof": {
+      "type": "flat",
+      "material": {
+        "material": "concrete",
+        "color": "#8d8d8d"
+      }
+    }
+  }
+}
